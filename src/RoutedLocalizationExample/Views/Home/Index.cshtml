@@ -1,0 +1,11 @@
+﻿@model RoutedLocalizationExample.Models.HomeViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p>@(Model.LocalizedString)</p>
+    <p>@Url.Action("LangFromRouteInActionFilter", "Home")</p>
+    <p>@Model.DateCreated.ToString()</p>
+</div>
